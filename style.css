@@ -81,7 +81,7 @@ form{
 
 }
 .hide-model{
-    height:0px;
+    height:0vh;
 }
 .hide-model form{
     display: none;   
