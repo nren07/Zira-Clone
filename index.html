@@ -26,18 +26,22 @@
     <section id="model" class="model hide-model">
         <span class="material-symbols-outlined toggle " onclick="toggleModel(this)">expand_more</span>
         <form id="create-task-form">
-            <input type="text" name="title" placeholder="Title">
-            <textarea name="description" cols="30" rows="3" required placeholder="description here"></textarea>
-            <input type="text" name="developer" required placeholder="Developer name">
-            <input type="number" name="estimate" min="0" placeholder="Estimated time in days">
+            <input  value="Chat App"type="text" name="title" placeholder="Title">
+            <textarea name="description" cols="30" rows="3" required placeholder="description here"> This is a dummy chat</textarea>
+            <input  value="SDE1"type="text" name="developer" required placeholder="Developer name">
+            <input value="10"type="number" name="estimate" min="0" placeholder="Estimated time in days">
             <select name="state" required>
-                <option value="todo">Todo</option>
-                <option value="inProgress">In-Progress</option>
-                <option value="done">Done</optiona>
+                <option value="TODO">Todo</option>
+                <option value="INPROGRESS">In-Progress</option>
+                <option value="DONE">Done</optiona>
             </select>
             <button type="submit">Create New Task</button>
         </form>
     </section>
+    </section>
+    <script src="./drag_drop.js"></script>
     <script src="./script.js "></script>
+
 </body>
+
 </html>

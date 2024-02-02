@@ -6,7 +6,7 @@ form.addEventListener("submit",(e)=>{
 
     // const taskStatus=e.target.state.value;
     // or
-    const taskStatus=form.state.value.toUpperCase();
+    const taskStatus=form.state.value;
 
     const taskInfo = {
         title: form.title.value,
@@ -18,6 +18,8 @@ form.addEventListener("submit",(e)=>{
     const taskCard=document.createElement("div");
     taskCard.className="task_card";
     taskCard.title=taskInfo.description;
+    taskCard.draggable="true"; // it allow an element to drag anywhere in the screen
+    taskCard.addEventListener("dragstart", onDragStart);
     taskCard.innerHTML=`
     <h3>${taskInfo.title}</h3>
                 <div>
