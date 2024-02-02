@@ -54,7 +54,7 @@ main{
     padding: 30px 10px;
     z-index: 10;
     background-color: white;
-    height:50vh;
+    height:60vh;
     transition: 0.2s linear;
 }
 form{
